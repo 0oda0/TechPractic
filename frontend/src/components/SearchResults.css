@@ -1,0 +1,52 @@
+.search-results {
+  margin-top: 20px;
+}
+.results-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 10px;
+}
+.result-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.result-header {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9em;
+  margin-bottom: 6px;
+}
+.file-name { font-weight: bold; }
+.page { color: #555; }
+.score { color: #888; }
+.result-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.result-text mark {
+  background: yellow;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.pagination button {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.no-results {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}

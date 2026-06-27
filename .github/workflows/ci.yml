@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+        pip install flake8 mypy pytest pytest-cov
+    - name: Lint with flake8
+      run: |
+        cd backend
+        flake8 app --count --show-source --statistics
+    - name: Lint with mypy
+      run: |
+        cd backend
+        mypy app
+    - name: Test with pytest
+      run: |
+        cd backend
+        pytest --cov=app --cov-report=xml
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./backend/coverage.xml

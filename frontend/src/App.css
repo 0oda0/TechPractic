@@ -1,0 +1,19 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.upload-section, .documents-section, .search-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}

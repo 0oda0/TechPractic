@@ -1,0 +1,27 @@
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.dropzone.active {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+.hint {
+  font-size: 0.9em;
+  color: #666;
+}
+.file-statuses {
+  margin-top: 15px;
+}
+.file-status {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+.status-ready { color: green; }
+.status-error { color: red; }
+.status-indexing { color: orange; }

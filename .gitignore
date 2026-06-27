@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.venv
+*.db
+*.sqlite3
+coverage.xml
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+
+# Docker
+*.pid
+*.sock
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+temp_pdfs/

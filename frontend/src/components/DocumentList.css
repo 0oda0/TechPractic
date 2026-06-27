@@ -1,0 +1,13 @@
+.document-list ul {
+  list-style: none;
+  padding: 0;
+}
+.document-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.doc-status {
+  text-transform: capitalize;
+}
