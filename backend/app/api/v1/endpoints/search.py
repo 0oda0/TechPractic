@@ -4,7 +4,7 @@ from app.schemas.search import SearchResponse
 
 router = APIRouter()
 
-@router.get("/search", response_model=SearchResponse)
+@router.get("", response_model=SearchResponse)   # убрали "/search"
 async def search(
     q: str = Query(..., description="Search query"),
     page: int = Query(1, ge=1, description="Page number"),

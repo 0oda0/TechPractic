@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';   // только хуки
 import UploadArea from './components/UploadArea';
 import DocumentList from './components/DocumentList';
 import SearchBar from './components/SearchBar';

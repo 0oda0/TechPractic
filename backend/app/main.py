@@ -29,9 +29,9 @@ app.include_router(api_router, prefix="/api/v1")
 
 Instrumentator().instrument(app).expose(app)
 
-@app.on_event("startup")
-def startup():
-    create_index_if_not_exists()
+#@app.on_event("startup")
+#def startup():
+#    create_index_if_not_exists()
 
 @app.get("/")
 def root():

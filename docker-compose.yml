@@ -26,6 +26,7 @@ services:
       - es_data:/usr/share/elasticsearch/data
     networks:
       - app-network
+    mem_limit: 1g
 
   redis:
     image: redis:7-alpine
